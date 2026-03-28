@@ -1,0 +1,77 @@
+{
+    // -------------------------
+    // Workbench & UI
+    // -------------------------
+    "workbench.sideBar.location": "right",
+    "window.zoomLevel": 0,
+    "update.showReleaseNotes": false,
+    "breadcrumbs.enabled": false,
+    // -------------------------
+    // Editor Basics
+    // -------------------------
+    "editor.lineNumbers": "relative",
+    "editor.stickyScroll.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "editor.suggest.insertMode": "replace",
+    // -------------------------
+    // Vim Extension
+    // -------------------------
+    "vim.leader": " ",
+    "vim.handleKeys": {
+        "<space>": true,
+    },
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    // -------------------------
+    // Terminal
+    // -------------------------
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.myTwoStepCommand",
+            "sequence": [
+                "workbench.action.terminal.toggleTerminal",
+                "extension.vim_insert"
+            ]
+        }
+    ],
+    // -------------------------
+    // Git / GitHub
+    // -------------------------
+    "git.autofetch": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    // -------------------------
+    // JavaScript / TypeScript
+    // -------------------------
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // -------------------------
+    // Language-Specific Overrides
+    // -------------------------
+    "[json]": {},
+    // -------------------------
+    // Launch Config
+    // -------------------------
+    "launch": {},
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.renderControlCharacters": false,
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "ms-settings"
+    ],
+    "editor.largeFileOptimizations": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "editor.minimap.enabled": false,
+    "window.menuBarVisibility": "compact"
+}

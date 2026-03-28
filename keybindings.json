@@ -1,0 +1,150 @@
+// Place your key bindings in this file to override the defaults
+[
+    // ================
+    // Explorer Controls
+    // ================
+    {
+        "key": "space e",
+        "command": "workbench.explorer.fileView.focus",
+        "when": "vim.mode == 'Normal' && !explorerViewletVisible"
+    },
+    {
+        "key": "space e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "vim.mode == 'Normal' && explorerViewletVisible"
+    },
+    {
+        "key": "space f",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer"
+    },
+    // ======================================================
+    // EXPLORER / NAVIGATOR ACTIONS (When Explorer Has Focus)
+    // ======================================================
+    // New File
+    {
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // New Folder
+    {
+        "key": "shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // Rename / Move File or Folder
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // Delete File or Folder (optional but useful)
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // ================
+    // Terminal Controls
+    // ================
+    {
+        "key": "space t",
+        "command": "multiCommand.myTwoStepCommand",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "space t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    //{
+    //   "KEY": "I",
+    //   "COMMAND": "EXTENSION.VIM_INSERT",
+    //   "WHEN": "TERMINALfOCUS"
+    // },
+    // ================
+    // Split Navigation (tmux-like)
+    // ================
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusBelowGroup",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusAboveGroup",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup",
+        "when": "vim.mode == 'Normal'"
+    },
+    // ================
+    // Split Creation
+    // ================
+    {
+        "key": "space v",
+        "command": "workbench.action.splitEditorRight",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "space s",
+        "command": "workbench.action.splitEditorDown",
+        "when": "vim.mode == 'Normal'"
+    },
+    // ================
+    // Panel Toggle
+    // ================
+    {
+        "key": "space p",
+        "command": "workbench.action.togglePanel",
+        "when": "vim.mode == 'Normal'"
+    },
+    // ================
+    // Tab Navigation
+    // ================
+    {
+        "key": "shift+h",
+        "command": "workbench.action.previousEditor",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "shift+l",
+        "command": "workbench.action.nextEditor",
+        "when": "vim.mode == 'Normal'"
+    },
+    // ================
+    // File Actions
+    // ================
+    {
+        "key": "space w",
+        "command": "workbench.action.files.save",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "space q",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "vim.mode == 'Normal'"
+    },
+    {
+        "key": "space n",
+        "command": "workbench.action.files.newUntitledFile",
+        "when": "vim.mode == 'Normal'"
+    }
+]
